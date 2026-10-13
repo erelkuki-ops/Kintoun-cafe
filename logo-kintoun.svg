@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" role="img" aria-label="KINTOUN — Indonesia Punya Kopi">
+  <g fill="#0a365d">
+    <ellipse cx="148" cy="132" rx="108" ry="46"/>
+    <circle cx="78" cy="112" r="42"/>
+    <circle cx="126" cy="84" r="54"/>
+    <circle cx="182" cy="98" r="46"/>
+    <circle cx="220" cy="122" r="30"/>
+    <circle cx="256" cy="64" r="9"/>
+  </g>
+  <g fill="none" stroke="#fffaf0" stroke-width="9" stroke-linecap="round">
+    <path d="M84 120 Q99 103 114 120"/>
+    <path d="M158 120 Q173 103 188 120"/>
+    <path d="M124 140 Q136 152 148 140" stroke-width="8"/>
+  </g>
+  <text x="292" y="118" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="900" fill="#0a365d" letter-spacing="1">KINTOUN</text>
+  <text x="296" y="162" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="400" fill="#3d7ca8">Indonesia Punya Kopi</text>
+</svg>

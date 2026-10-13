@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0a365d;
+  --color-navy-2: #114a75;
+  --color-navy-deep: #062540;
+  --color-sky: #2f9be8;
+  --color-sky-soft: #8ed0f5;
+  --color-sky-pale: #dceffb;
+  --color-cream: #fffbf1;
+  --color-cream-2: #faf3e2;
+  --color-beige: #f3e9d2;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { background: #fffbf1; color: #0a365d; font-family: var(--font-sans); }
+.font-display { font-family: var(--font-serif); }
+
+::selection { background: #2f9be8; color: white; }
+
+/* masonry */
+.masonry { columns: 2; column-gap: 1rem; }
+@media (min-width: 768px) { .masonry { columns: 3; } }
+@media (min-width: 1200px) { .masonry { columns: 4; } }
+.masonry > * { break-inside: avoid; margin-bottom: 1rem; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.animate-fadeUp { animation: fadeUp .7s cubic-bezier(.22,1,.36,1) both; }
+@keyframes floaty { 0%,100%{ transform: translateY(0)} 50%{ transform: translateY(-10px)} }
+.animate-floaty { animation: floaty 5s ease-in-out infinite; }
+@keyframes drift { 0%{ transform: translateX(0)} 100%{ transform: translateX(18px)} }
+.animate-drift { animation: drift 7s ease-in-out infinite alternate; }
+
+.dropzone-active { border-color: #2f9be8 !important; background: #e8f5fd !important; transform: scale(1.01); }
+input, textarea, select { outline: none; }
+input:focus, textarea:focus, select:focus { border-color: #2f9be8 !important; box-shadow: 0 0 0 3px rgba(47,155,232,.20); }
